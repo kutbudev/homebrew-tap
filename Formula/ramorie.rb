@@ -19,7 +19,7 @@ class Ramorie < Formula
     end
     on_arm do
       url "https://github.com/kutbudev/ramorie-cli/releases/download/v1.5.0/ramorie_1.5.0_darwin_arm64.tar.gz"
-      sha256 "c8f8e3b0e5a8f3e8e3b0e5a8f3e8e3b0e5a8f3e8e3b0e5a8f3e8e3b0e5a8f3e8"
+      sha256 "4092d558c4826d71075eda8a867e0fed86b94c55fcbcf3703064859ff06afca9"
 
       def install
         bin.install "ramorie"
@@ -41,7 +41,7 @@ class Ramorie < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/kutbudev/ramorie-cli/releases/download/v1.5.0/ramorie_1.5.0_linux_arm64.tar.gz"
-        sha256 "placeholder_arm64_sha256"
+        sha256 "026e19644dc28c9cbace05f2c74dae32a1270bb454283997471a0d55eec7728a"
 
         def install
           bin.install "ramorie"
