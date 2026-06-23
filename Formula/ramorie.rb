@@ -5,21 +5,21 @@
 class Ramorie < Formula
   desc "AI-powered task and memory management CLI"
   homepage "https://ramorie.com"
-  version "9.5.1"
+  version "9.5.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kutbudev/ramorie-cli/releases/download/v9.5.1/ramorie_9.5.1_darwin_amd64.tar.gz"
-      sha256 "4ee34e50f50eda45449bb17eb50ba3d9de362876ddc229d3cf0e1053812919fb"
+      url "https://github.com/kutbudev/ramorie-cli/releases/download/v9.5.2/ramorie_9.5.2_darwin_amd64.tar.gz"
+      sha256 "25871799982a565e1b72ec1767a122196e3b5092161f9d67682e012ec1776221"
 
       define_method(:install) do
         bin.install "ramorie"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kutbudev/ramorie-cli/releases/download/v9.5.1/ramorie_9.5.1_darwin_arm64.tar.gz"
-      sha256 "5081e4482960513f0b02d63cc2ea01081b77c5f329c1d150809f30fc81f755ba"
+      url "https://github.com/kutbudev/ramorie-cli/releases/download/v9.5.2/ramorie_9.5.2_darwin_arm64.tar.gz"
+      sha256 "f15d5e67053335c99250a1e5db4bb8fba88abc5984b7adbd0f6c7383b6de9676"
 
       define_method(:install) do
         bin.install "ramorie"
@@ -29,15 +29,15 @@ class Ramorie < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kutbudev/ramorie-cli/releases/download/v9.5.1/ramorie_9.5.1_linux_amd64.tar.gz"
-      sha256 "adf70b6fb97381549065155fa606e29a70ca2dd03cb4f5bf0b1d6b8f67764ece"
+      url "https://github.com/kutbudev/ramorie-cli/releases/download/v9.5.2/ramorie_9.5.2_linux_amd64.tar.gz"
+      sha256 "8255ff613aa51daadbac44f066e962df1d9d557777872406332b4f21655e0dca"
       define_method(:install) do
         bin.install "ramorie"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kutbudev/ramorie-cli/releases/download/v9.5.1/ramorie_9.5.1_linux_arm64.tar.gz"
-      sha256 "6f19c90ae44032348bd715869f5bea8b7d62a1a048a503f35c016c1b3d6d1ba7"
+      url "https://github.com/kutbudev/ramorie-cli/releases/download/v9.5.2/ramorie_9.5.2_linux_arm64.tar.gz"
+      sha256 "e31249cf6fdc6e373c2dec677e78ba6e6baf2a5cc4e41307e6cec74e16873975"
       define_method(:install) do
         bin.install "ramorie"
       end
